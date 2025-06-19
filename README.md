@@ -101,3 +101,21 @@ Lakukan uji coba untuk memastikan semua fungsi berjalan dengan baik:
 ![Screenshot 2025-06-17 125238](https://github.com/user-attachments/assets/dc08b9f2-3b5e-4a54-a034-232b7de82f4d)
 
 ![Screenshot 2025-06-17 125300](https://github.com/user-attachments/assets/014a0912-9848-4b71-bd05-5bbd9faca568)
+
+8. Membuat Model.
+Pada modul sebelumnya sudah dibuat ArtikelModel, pada modul ini kita akan
+memanfaatkan model tersebut agar dapat diakses melalui AJAX.
+
+9. Membuat AJAX Controller
+
+![image](https://github.com/user-attachments/assets/46c90da8-8852-4a70-9d5d-2e0d27bb0971)
+
+10. Membuat View
+
+![image](https://github.com/user-attachments/assets/89bec5c2-f3e3-4f14-93b8-19b4ab526df1)
+
+![image](https://github.com/user-attachments/assets/e5922213-a54c-43d8-b8b3-4784ba35caca)
+
+![image](https://github.com/user-attachments/assets/3e53ed3f-7178-47d0-8027-a58e612231ca)
+
+![image](https://github.com/user-attachments/assets/ce508026-8ca8-4f8c-8c6c-c7ebe322d0d1)
