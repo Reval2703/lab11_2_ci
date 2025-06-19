@@ -2,7 +2,7 @@
 |-------------------------|------------|---------|-------------------|
 | Muhammad Reval Prasetya | 312310437  | TI.23.A4| Pemrograman Web 2 |
 
-Praktikum 1-6
+Praktikum 7-9
 
 1. Membuat Tabel Kategori
 Kita akan membuat tabel baru bernama `kategori` untuk mengkategorikan artikel.
@@ -74,3 +74,32 @@ Buka folder view/artikel sesuaikan masing-masing view.
 
 ![image](https://github.com/user-attachments/assets/f08f0878-867d-4bb1-b7e3-9e4d5d7ec436)
 
+**form_edit.php**
+
+![image](https://github.com/user-attachments/assets/bcf71563-8c33-424e-a9fa-0b833ddc0282)
+
+![image](https://github.com/user-attachments/assets/9daab03a-0b06-4ec2-8b6c-2215ccc25aa3)
+
+![image](https://github.com/user-attachments/assets/30fd0aa7-026b-4169-b8f8-9187ba842a69)
+
+7. Testing
+Lakukan uji coba untuk memastikan semua fungsi berjalan dengan baik:
+• Menampilkan daftar artikel dengan nama kategori.
+
+![Screenshot 2025-06-17 124824](https://github.com/user-attachments/assets/ed3fc36e-1243-4608-bc49-365a25299688)
+
+• Menambah artikel baru dengan memilih kategori.
+
+![Screenshot 2025-06-17 124935](https://github.com/user-attachments/assets/dda950ed-b6cf-4dfc-8db5-9e44e83196bc)
+
+• Mengedit artikel dan mengubah kategorinya.
+
+![Screenshot 2025-06-17 125155](https://github.com/user-attachments/assets/d142f007-d18a-47f2-8f31-017d4bb5cfa7)
+
+• Menghapus artikel.
+
+![Screenshot 2025-06-17 125238](https://github.com/user-attachments/assets/dc08b9f2-3b5e-4a54-a034-232b7de82f4d)
+
+![Screenshot 2025-06-17 125249](https://github.com/user-attachments/assets/44c676b3-2d4c-4484-9084-4f36c5fa34a0)
+
+![Screenshot 2025-06-17 125300](https://github.com/user-attachments/assets/014a0912-9848-4b71-bd05-5bbd9faca568)
