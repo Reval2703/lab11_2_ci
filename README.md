@@ -119,3 +119,53 @@ memanfaatkan model tersebut agar dapat diakses melalui AJAX.
 ![image](https://github.com/user-attachments/assets/3e53ed3f-7178-47d0-8027-a58e612231ca)
 
 ![image](https://github.com/user-attachments/assets/ce508026-8ca8-4f8c-8c6c-c7ebe322d0d1)
+
+11. Persiapan
+* Pastikan MySQL Server sudah berjalan.
+* Buka database `lab_ci4`.
+* Pastikan tabel `artikel` dan `kategori` sudah ada dan terisi data.
+* Pastikan library jQuery sudah terpasang atau dapat diakses melalui CDN.
+
+12. Modifikasi Controller Artikel
+Ubah method `admin_index()` di `Artikel.php` untuk mengembalikan data dalam format
+JSON jika request adalah AJAX. (Sama seperti modul sebelumnya)
+
+![image](https://github.com/user-attachments/assets/3e57d9ad-8b23-41e3-90a6-934de1ab3740)
+
+Penjelasan:
+• `$page = $this->request->getVar('page') ?? 1;`: Mendapatkan nomor
+halaman dari request. Jika tidak ada, default ke halaman 1.
+• `$builder->paginate(10, 'default', $page);`: Menerapkan pagination
+dengan nomor halaman yang diberikan.
+• `$this->request->isAJAX()`: Memeriksa apakah request yang datang adalah
+AJAX.
+• Jika AJAX, kembalikan data artikel dan pager dalam format JSON.
+• Jika bukan AJAX, tampilkan view seperti biasa.
+
+13. Modifikasi View (admin_index.php)
+* Ubah view `admin_index.php` untuk menggunakan jQuery.
+* Hapus kode yang menampilkan tabel artikel dan pagination secara langsung.
+* Tambahkan elemen untuk menampilkan data artikel dan pagination dari AJAX.
+* Tambahkan kode jQuery untuk melakukan request AJAX.
+
+![image](https://github.com/user-attachments/assets/2afe6114-97ea-4cc8-90a8-e79bcc9b3e70)
+
+![image](https://github.com/user-attachments/assets/a4b6cf7a-c63a-49ae-a45b-e2c216a2a945)
+
+![image](https://github.com/user-attachments/assets/dc7a12a7-abb3-4179-b387-368887550d1f)
+
+![image](https://github.com/user-attachments/assets/c633d358-dbb9-49d0-a186-0fbe3bc85f6a)
+
+Pertanyaan dan Tugas
+1. Selesaikan semua langkah praktikum di atas.
+2. Modifikasi tampilan data artikel dan pagination sesuai kebutuhan desain.
+
+![Screenshot 2025-06-19 214251](https://github.com/user-attachments/assets/33b43aed-d99a-45ac-9182-de22a769b9fa)
+
+3. Tambahkan indikator loading saat data sedang diambil dari server.
+
+![image](https://github.com/user-attachments/assets/f6f021bd-9431-469d-8d8c-4ad9e7cb3637)
+
+4. Implementasikan fitur sorting (mengurutkan artikel berdasarkan judul, dll.) dengan AJAX.
+
+![image](https://github.com/user-attachments/assets/4730d1ed-1ef7-48d0-8a07-d5e40cc52b55)
