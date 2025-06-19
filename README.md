@@ -169,3 +169,12 @@ Pertanyaan dan Tugas
 4. Implementasikan fitur sorting (mengurutkan artikel berdasarkan judul, dll.) dengan AJAX.
 
 ![image](https://github.com/user-attachments/assets/4730d1ed-1ef7-48d0-8a07-d5e40cc52b55)
+
+
+Hasilnya :
+
+![Screenshot 2025-06-20 000619](https://github.com/user-attachments/assets/e11a62f8-20ac-494c-a72d-e9dbf10f942d)
+
+![Screenshot 2025-06-20 000632](https://github.com/user-attachments/assets/29c57c8f-fd73-4f44-80a9-44e8e509b6f5)
+
+![Screenshot 2025-06-20 000643](https://github.com/user-attachments/assets/49cf21ca-1d35-40d4-8e73-1c7ec84acb83)
