@@ -100,6 +100,4 @@ Lakukan uji coba untuk memastikan semua fungsi berjalan dengan baik:
 
 ![Screenshot 2025-06-17 125238](https://github.com/user-attachments/assets/dc08b9f2-3b5e-4a54-a034-232b7de82f4d)
 
-![Screenshot 2025-06-17 125249](https://github.com/user-attachments/assets/44c676b3-2d4c-4484-9084-4f36c5fa34a0)
-
 ![Screenshot 2025-06-17 125300](https://github.com/user-attachments/assets/014a0912-9848-4b71-bd05-5bbd9faca568)
