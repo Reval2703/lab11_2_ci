@@ -2,7 +2,7 @@
 |-------------------------|------------|---------|-------------------|
 | Muhammad Reval Prasetya | 312310437  | TI.23.A4| Pemrograman Web 2 |
 
-Praktikum 7-9
+Praktikum 7-10
 
 1. Membuat Tabel Kategori
 Kita akan membuat tabel baru bernama `kategori` untuk mengkategorikan artikel.
@@ -178,3 +178,102 @@ Hasilnya :
 ![Screenshot 2025-06-20 000632](https://github.com/user-attachments/assets/29c57c8f-fd73-4f44-80a9-44e8e509b6f5)
 
 ![Screenshot 2025-06-20 000643](https://github.com/user-attachments/assets/49cf21ca-1d35-40d4-8e73-1c7ec84acb83)
+
+
+14. Persiapan
+Periapan awal adalah mengunduh aplikasi REST Client, ada banyak aplikasi yang dapat digunakan untuk
+keperluan tersebut. Salah satunya adalah Postman. Postman – Merupakan aplikasi yang berfungsi
+sebagai REST Client, digunakan untuk testing REST API. Unduh apliasi Postman dari tautan berikut:
+https://www.postman.com/downloads/
+
+15. Membuat Model.
+Pada modul sebelumnya sudah dibuat ArtikelModel, pada modul ini kita akan memanfaatkan model
+tersebut agar dapat diakses melalui API.
+
+16. Membuat REST Controller
+Pada tahap ini, kita akan membuat file REST Controller yang berisi fungsi untuk menampilkan,
+menambah, mengubah dan menghapus data. Masuklah ke direktori app\Controllers dan buatlah file
+baru bernama Post.php. Kemudian, salin kode di bawah ini ke dalam file tersebut:
+
+![image](https://github.com/user-attachments/assets/4329ef04-69de-44b5-94ab-289cfcc4e9d2)
+
+![image](https://github.com/user-attachments/assets/852374bc-0a2b-42af-ad3c-2b75b52cf8ac)
+
+![image](https://github.com/user-attachments/assets/98558c92-8f10-4fad-9eab-1f6cd3d21183)
+
+Kode diatas berisi 5 method, yaitu:
+• index() – Berfungsi untuk menampilkan seluruh data pada database.
+• create() – Berfungsi untuk menambahkan data baru ke database.
+• show() – Berfungsi untuk menampilkan suatu data spesifik dari database.
+• update() – Berfungsi untuk mengubah suatu data pada database.
+• delete() – Berfungsi untuk menghapus data dari database.
+
+17. Membuat Routing REST API
+Untuk mengakses REST API CodeIgniter, kita perlu mendefinisikan route-nya terlebih dulu.
+Caranya, masuklah ke direktori app/Config dan bukalah file Routes.php. Tambahkan kode
+di bawah ini:
+
+![image](https://github.com/user-attachments/assets/91f4967b-0e16-443e-a7d5-9f94048e8759)
+
+Untuk mengecek route nya jalankan perintah berikut:
+
+![image](https://github.com/user-attachments/assets/91ef61e3-3f3b-494e-b024-ec395049db8a)
+
+Selanjutnya akan muncul daftar route yang telah dibuat.
+
+![image](https://github.com/user-attachments/assets/dc130d5f-7898-4e0e-bbd4-e271e430c72e)
+
+Seperti yang terlihat, satu baris kode routes yang di tambahkan akan menghasilkan banyak
+Endpoint.
+Selanjutnya melakukan uji coba terhadap REST API CodeIgniter.
+
+18. Testing REST API CodeIgniter
+Buka aplikasi postman dan pilih create new → HTTP Request
+
+![image](https://github.com/user-attachments/assets/890a0541-a634-4ff5-8dbd-685eca172ffc)
+
+19. Menampilkan Semua Data
+Pilih method GET dan masukkan URL berikut:
+http://localhost:8080/post
+Lalu, klik Send. Jika hasil test menampilkan semua data artikel dari database, maka pengujian
+berhasil.
+
+![image](https://github.com/user-attachments/assets/f64d2583-357d-4ccf-9827-49f82399ed25)
+
+20. Menampilkan Data Spesifik
+Masih menggunakan method GET, hanya perlu menambahkan ID artikel di belakang URL
+seperti ini:
+http://localhost:8080/post/2
+Selanjutnya, klik Send. Request tersebut akan menampilkan data artikel yang memiliki ID
+nomor 2 di database.
+
+![image](https://github.com/user-attachments/assets/6ee45f3c-3175-4ab3-b058-c757f410a51d)
+
+21. Mengubah Data
+Untuk mengubah data, silakan ganti method menjadi PUT. Kemudian, masukkan URL artikel
+yang ingin diubah. Misalnya, ingin mengubah data artikel dengan ID nomor 2, maka masukkan
+URL berikut:
+http://localhost:8080/post/2
+Selanjutnya, pilih tab Body. Kemudian, pilih x-www-form-uriencoded. Masukkan nama
+atribut tabel pada kolom KEY dan nilai data yang baru pada kolom VALUE. Kalau sudah,
+klik Send.
+
+![image](https://github.com/user-attachments/assets/483f730c-5453-4b60-84d6-c2d124b96d47)
+
+22. Menambahkan Data
+Anda perlu menggunakan method POST untuk menambahkan data baru ke database.
+Kemudian, masukkan URL berikut:
+http://localhost:8080/post
+Pilih tab Body, lalu pilih x-www-form-uriencoded. Masukkan atribut tabel pada kolom KEY
+dan nilai data baru di kolom VALUE. Jangan lupa, klik Send.
+
+![image](https://github.com/user-attachments/assets/99d40810-b938-4228-b0cd-ee101d37875c)
+
+23. Menghapus Data
+Pilih method DELETE untuk menghapus data. Lalu, masukkan URL spesifik data mana yang
+ingin di hapus. Misalnya, ingin menghapus data nomor 3, maka URL-nya seperti ini:
+http://localhost:8080/post/3
+Langsung saja klik Send, maka akan mendapatkan pesan bahwa data telah berhasil dihapus dari
+database.
+
+![image](https://github.com/user-attachments/assets/dbb337cf-e57e-4b50-8d96-abb937c99945)
